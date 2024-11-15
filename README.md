@@ -56,6 +56,5 @@ Follow the steps below to run the application locally:
 **Clone the Repository**
    ```bash
    git clone https://github.com/Rishadey/Social-Media-Application.git
-   cd social-media-app
 
 ---
