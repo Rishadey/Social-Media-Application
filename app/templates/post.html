@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <title>Instagram Post Card Clone</title>
+    <link rel="stylesheet" href="{% static 'poststyle.css' %}">
+    <style>
+        .dropbtn {
+          background-color: white;
+          border-radius: 2rem;
+          color: black;
+          padding: 0.6rem 0.6rem;;
+          font-size: 10px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 60px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: none;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: none;}
+        </style>
+</head>
+
+<body>
+    
+    <div class="card">
+        <div class="top">
+            <div class="container">
+                <a href="main"><i class='fas fa-arrow-left'></i></a>
+            </div>
+            <div class="userDeatils">
+                
+                <div class="profileImg">
+                    <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt="user" class="cover">
+                </div>
+                <h3>Lisa<br><span>Socialy</span></h3>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-ellipsis-v" style="font-size:14px"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </div>
+            </div> 
+        </div>
+        {% for i in x %}
+        <tr><td>
+        <div class="imgBg">
+            <img src="../static/{{i.purl}}" alt="bg" class="cover">
+        </div>
+        </td></tr>
+        {% endfor %}
+    </div>
+    
+</body>
+
+</html>
