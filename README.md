@@ -30,15 +30,6 @@ The application is built using **Python**, **Django**, **HTML**, and **CSS**, fo
 
 ---
 
-## Installation and Setup
-Follow the steps below to run the application locally:
-**Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/social-media-app.git
-   cd social-media-app
-
----
-
 ## Project Structure
 social-media-app/
 │
@@ -54,5 +45,20 @@ social-media-app/
 ├── db.sqlite3             # SQLite database
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
+
+---
+
+## Screenshots
+### Homepage
+![Homepage Screenshot](images/screenshot1.png)
+
+
+
+## Installation and Setup
+Follow the steps below to run the application locally:
+**Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/social-media-app.git
+   cd social-media-app
 
 ---
