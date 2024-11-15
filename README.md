@@ -35,24 +35,6 @@ The application is built using **Python**, **Django**, **HTML**, and **CSS**, fo
 
 ---
 
-## Project Structure
-social-media-app/
-│
-├── social_media/          # Main application directory
-│   ├── migrations/        # Database migration files
-│   ├── templates/         # HTML templates for UI
-│   ├── static/            # Static files (CSS, JS)
-│   ├── views.py           # Application logic
-│   ├── models.py          # Database models
-│   └── urls.py            # URL routing
-│
-├── manage.py              # Django project manager
-├── db.sqlite3             # SQLite database
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
-
----
-
 ## Screenshots
 ### Loginpage
 ![Loginpage Screenshot](https://github.com/user-attachments/assets/31f333f5-306d-4e50-bd13-f290fa4bd9cf)
